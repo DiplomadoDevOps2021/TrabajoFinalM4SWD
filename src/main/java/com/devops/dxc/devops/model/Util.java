@@ -28,9 +28,9 @@ public class Util {
         }
     }
 
-    public static int getImpuesto(int sueldo) {
+    public static int getImpuesto(int dxc, int sueldo) {
         if (sueldo >= 1500000){
-            return (int)(sueldo*0.1);
+            return (int)(dxc*0.1);
         }
         
         return 0;
