@@ -28,14 +28,20 @@ public class Util {
         }
     }
 
-    public static int getImpuesto(int dxc, int sueldo) {
-        if (sueldo >= 1500000){
-            return (int)(dxc*0.1);
-        }
-        
-        return 0;
-        
+    public static int getSaldo(int ahorro, int sueldo) {
+        int d = getDxc(ahorro, sueldo);
+        return (int) (ahorro - d);
     }
+
+    public static int getImpuesto(int ahorro, int sueldo) {
+        int d = getDxc(ahorro, sueldo);
+        if (sueldo >= 1500000) {
+            return (int)(d*0.1);
+        }
+        return 0;
+    }
+
+  
     /**
      * Método que retorna el valor de la UF.  Este método debe ser refactorizado por una integración a un servicio
      * que retorne la UF en tiempo real.  Por ejemplo mindicador.cl
