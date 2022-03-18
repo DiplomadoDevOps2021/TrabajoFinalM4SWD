@@ -21,7 +21,7 @@ public class Dxc implements Serializable{
 		this.sueldo = sueldo;
 		this.uf = Util.getUf(); 
 		this.dxc = Util.getDxc(ahorro,sueldo);
-		this.impuesto = Util.getImpuesto(this.dxc, this.sueldo);
+		this.impuesto = Util.getImpuesto(ahorro, this.sueldo);
 		this.saldo = this.ahorro - this.dxc; 
 	}
 
