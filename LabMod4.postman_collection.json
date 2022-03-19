@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "get10x100to",
+			"name": "getDiezXCiento",
 			"event": [
 				{
 					"listen": "test",
@@ -28,7 +28,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9000/rest/msdxc/dxc?sueldo=100&ahorro=1000",
+					"raw": "http://localhost:9000/rest/msdxc/dxc?ahorro=55000000&sueldo=1500000",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -41,12 +41,12 @@
 					],
 					"query": [
 						{
-							"key": "sueldo",
-							"value": "100"
+							"key": "ahorro",
+							"value": "55000000"
 						},
 						{
-							"key": "ahorro",
-							"value": "1000"
+							"key": "sueldo",
+							"value": "1500000"
 						}
 					]
 				}
