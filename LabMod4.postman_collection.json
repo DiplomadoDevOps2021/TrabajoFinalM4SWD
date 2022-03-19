@@ -12,12 +12,14 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
 							"pm.test(\"Response time is less than 200ms\", () => {\r",
 							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Diez x Ciento\", () => {\r",
+							"  const responseJson = pm.response.json();\r",
+							"  pm.expect(responseJson.ahorro).to.eql(55000000);\r",
+							"  pm.expect(responseJson.dxc).to.eql(4753645);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -64,8 +66,9 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Response time is less than 200ms\", () => {\r",
-							"  pm.response.to.have.status(200);\r",
+							"pm.test(\"Saldo\", () => {\r",
+							"  const responseJson = pm.response.json();\r",
+							"  pm.expect(responseJson.saldo).to.eql(50246355);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -112,8 +115,9 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Response time is less than 200ms\", () => {\r",
-							"  pm.response.to.have.status(200);\r",
+							"pm.test(\"Impuesto\", () => {\r",
+							"  const responseJson = pm.response.json();\r",
+							"  pm.expect(responseJson.impuesto).to.eql(475364);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -160,8 +164,9 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Response time is less than 200ms\", () => {\r",
-							"  pm.response.to.have.status(200);\r",
+							"pm.test(\"Valor UF\", () => {\r",
+							"  const responseJson = pm.response.json();\r",
+							"  pm.expect(responseJson.valor).to.eql(31690.97);\r",
 							"});"
 						],
 						"type": "text/javascript"
