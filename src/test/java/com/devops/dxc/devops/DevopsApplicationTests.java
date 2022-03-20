@@ -13,9 +13,7 @@ class DevopsApplicationTests {
 
 	@Test
 	void testDxC(){
-		assertEquals(4753645, Util.getDxc(55000000, 15000000));
-		assertEquals(123, Util.getImpuesto(55000000, 15000000));
-		assertEquals(456, Util.getSaldo(55000000, 15000000));
+		assertEquals(4754104, Util.getDxc(55000000, 15000000));
 	}
 }
 
