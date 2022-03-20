@@ -1,32 +1,21 @@
 package com.devops.dxc.devops;
 
-import com.devops.dxc.devops.model.Dxc;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.devops.dxc.devops.model.Util;
 
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.DisplayName;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
-
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.net.http.HttpResponse.BodyHandlers;
 
 @SpringBootTest
 class DevopsApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
 
-	@DisplayName("Asegurar el calculo del 10%")
+	@Test
 	void testDxC(){
-		assertEquals(4752267, Util.getDxc(55000000, 15000000));
+		assertEquals(4753645, Util.getDxc(55000000, 15000000));
+		assertEquals(123, Util.getImpuesto(55000000, 15000000));
+		assertEquals(456, Util.getSaldo(55000000, 15000000));
 	}
 }
 
