@@ -24,7 +24,6 @@ pipeline {
                 sh "nohup bash mvnw spring-boot:run &"
                 sh "sleep 20"
                 sh "ls"
-                validaStatus('http://localhost:9000/rest/msdxc/dxc?ahorro=55000000&sueldo=1500000')
                 sh "newman run LabMod4.postman_collection.json"
             }
         }
