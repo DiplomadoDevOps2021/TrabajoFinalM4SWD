@@ -13,12 +13,6 @@ pipeline {
             }
         }
 
-        stage('Run') {
-            steps {
-                
-            }
-        }
-
         stage('TestJunit') {
             steps {
                 sh "mvn test"
