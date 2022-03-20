@@ -19,7 +19,7 @@
 							"pm.test(\"Diez x Ciento\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
 							"  pm.expect(responseJson.ahorro).to.eql(55000000);\r",
-							"  pm.expect(responseJson.dxc).to.eql(4753645);\r",
+							"  pm.expect(responseJson.dxc).to.eql(4754104);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -68,7 +68,7 @@
 							"\r",
 							"pm.test(\"Saldo\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
-							"  pm.expect(responseJson.saldo).to.eql(50246355);\r",
+							"  pm.expect(responseJson.saldo).to.eql(50245896);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -117,7 +117,7 @@
 							"\r",
 							"pm.test(\"Impuesto\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
-							"  pm.expect(responseJson.impuesto).to.eql(475364);\r",
+							"  pm.expect(responseJson.impuesto).to.eql(475410);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -166,7 +166,7 @@
 							"\r",
 							"pm.test(\"Valor UF\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
-							"  pm.expect(responseJson.valor).to.eql(31690.97);\r",
+							"  pm.expect(responseJson.valor).to.eql(31694.03);\r",
 							"});"
 						],
 						"type": "text/javascript"
