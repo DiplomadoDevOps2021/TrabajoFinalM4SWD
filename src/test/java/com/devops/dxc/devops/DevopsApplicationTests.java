@@ -23,7 +23,7 @@ class DevopsApplicationTests {
 	@Test
 	@DisplayName("Test Método Impuesto")
 	void testImpuesto(){
-		assertEquals(475364, Util.getImpuesto(55000000, 1500000));
+		assertEquals(475410, Util.getImpuesto(55000000, 1500000));
 		}
 	
 	@Test
