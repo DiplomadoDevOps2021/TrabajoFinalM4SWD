@@ -13,13 +13,13 @@ pipeline {
             }
         }
 
-       /* stage('TestJunit') {
+        stage('Test Junit') {
             steps {
                 sh "mvn test"
             }
         }
-*/
-        stage('TestNewman') {
+
+        stage('Test Newman') {
             steps {
                 sh "nohup bash mvnw spring-boot:run &"
                 sh "sleep 20"
