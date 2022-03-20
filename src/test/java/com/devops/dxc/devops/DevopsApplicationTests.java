@@ -16,7 +16,7 @@ class DevopsApplicationTests {
     @Test
 	@DisplayName("Test Método 10%")
 	void testDxC(){
-		assertEquals(4753645, Util.getDxc(55000000, 1500000));
+		assertEquals(4754104, Util.getDxc(55000000, 1500000));
 		}
 
 
@@ -29,12 +29,12 @@ class DevopsApplicationTests {
 	@Test
 	@DisplayName("Test Método Saldo")
 	void testSaldo(){
-		assertEquals(50246355, Util.getSaldo(55000000, 1500000));
+		assertEquals(50245896, Util.getSaldo(55000000, 1500000));
 	}
 
 	@Test
 	@DisplayName("Test Api UF")
 	void testUf(){
-		assertEquals(31690.97, Util.getUf());
+		assertEquals(31694.03, Util.getUf());
 	}
 }
